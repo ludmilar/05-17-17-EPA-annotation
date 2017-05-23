@@ -13,7 +13,9 @@
 
 6. After running DNA database - all sequences were retrieved into file:  **epa_from_matrix_dna_seq.csv**
 
-7. Now run the batch BLAST (**blastx** - translated nucleotides vs protein db) of those epa seq vs Araport11_genes.201606: `blastx -db Araport11_genes.201606.pep.fasta -query epa_from_matrix_dna_seq.csv -out epa_from_matrix_dna_seqANNOTATED.csv -evalue 10e-10 -max_target_seqs 1 -outfmt 10` (Started on 05-18-17, 3:00pm, finished - )
+7. Now run the batch BLAST (**blastx** - translated nucleotides vs protein db) of those epa seq vs Araport11_genes.201606: `blastx -db Araport11_genes.201606.pep.fasta -query epa_from_matrix_dna_seq.csv -out epa_from_matrix_dna_seqANNOTATED.csv -evalue 10e-10 -max_target_seqs 1 -outfmt 10` (Started on 05-18-17, 3:00pm, finished -next morning. )
+
+8. On 5-22-17 Tryied to rerun with e-value 10e-2. (file ...v2.csv). Took 19 hours. - by mistake run BLASTp. Need to rerun with blatx. So started rerrun on 5-23-17, 12:00pm. `blastx -db Araport11_genes.201606.pep.fasta -query epa_from_matrix_dna_seq.csv -out epa_from_matrix_dna_seqANNOTATEDv2.csv -evalue 10e-2 -max_target_seqs 1 -outfmt 10`
 
 
 > Written with [StackEdit](https://stackedit.io/).
